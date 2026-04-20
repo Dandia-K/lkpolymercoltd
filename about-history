@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개 - 연혁 | LK 폴리머</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="header-wrap">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">LK</div>
+          <div class="brand-copy"><strong>LK POLYMER</strong><span>종량제봉투 · 일반봉투 제조 전문기업</span></div>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" data-menu-toggle><span></span></button>
+      </div>
+      <nav class="global-nav" data-global-menu><div class="global-nav-panel"><div class="menu-grid">
+        <div class="menu-group"><h3>회사소개</h3><a href="about-history.html">연혁</a><a href="about-ceo.html">CEO 인사말</a><a href="about-location.html">오시는 길</a></div>
+        <div class="menu-group"><h3>제품소개</h3><a href="products-paybag.html">종량제봉투</a><a href="products-general.html">일반봉투</a></div>
+        <div class="menu-group"><h3>공장소개</h3><a href="factory-extrusion.html">압출시설</a><a href="factory-printing.html">인쇄시설</a><a href="factory-processing.html">가공시설</a></div>
+        <div class="menu-group"><h3>인증현황</h3><a href="certification.html">인증서</a></div>
+        <div class="menu-group"><h3>연락문의</h3><a href="contact-faq.html">자주찾는질문</a><a href="contact-request.html">상담요청</a></div>
+      </div></div></nav>
+    </header>
+    <main class="main-layout">
+      <aside class="side-nav">
+        <h2>회사소개</h2>
+        <a class="is-active" href="about-history.html">연혁</a>
+        <a href="about-ceo.html">CEO 인사말</a>
+        <a href="about-location.html">오시는 길</a>
+      </aside>
+      <section class="content-panel">
+        <h1>연혁</h1>
+        <p class="lead">기업의 시작과 성장 과정을 정리하는 페이지입니다. 아래 문구는 추후 실제 연혁 자료에 맞게 수정하시면 됩니다.</p>
+        <div class="section-block">
+          <ul class="timeline">
+            <li><strong>2026</strong> 주요 생산 품목 확대 및 고객 대응 체계 고도화</li>
+            <li><strong>2023</strong> 공장 운영 효율화를 위한 주요 설비 보강</li>
+            <li><strong>2020</strong> 종량제봉투 및 일반봉투 생산 품목 안정화</li>
+            <li><strong>2017</strong> LK 폴리머 제조 기반 구축</li>
+          </ul>
+        </div>
+        <div class="section-block">
+          <div class="card-grid">
+            <article class="info-card">
+              <h3>설립 배경</h3>
+              <p>회사 설립 목적과 제조업 기반을 갖추게 된 배경을 요약하는 영역입니다.</p>
+            </article>
+            <article class="info-card">
+              <h3>성장 방향</h3>
+              <p>생산 품질, 고객 신뢰, 안정적 납품을 중심으로 성장한 과정을 정리할 수 있습니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><div><strong>LK 폴리머</strong><div>비닐봉투 제조업체 / 종량제봉투 / 일반봉투</div></div><div><div>주소: 추후 입력 예정</div><div>전화: 추후 입력 예정 / 이메일: 추후 입력 예정</div></div></div></footer>
+  </div>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
