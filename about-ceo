@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개 - CEO 인사말 | LK 폴리머</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="header-wrap">
+      <div class="header-inner">
+        <a class="brand" href="index.html"><div class="brand-mark">LK</div><div class="brand-copy"><strong>LK POLYMER</strong><span>종량제봉투 · 일반봉투 제조 전문기업</span></div></a>
+        <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" data-menu-toggle><span></span></button>
+      </div>
+      <nav class="global-nav" data-global-menu><div class="global-nav-panel"><div class="menu-grid">
+        <div class="menu-group"><h3>회사소개</h3><a href="about-history.html">연혁</a><a href="about-ceo.html">CEO 인사말</a><a href="about-location.html">오시는 길</a></div>
+        <div class="menu-group"><h3>제품소개</h3><a href="products-paybag.html">종량제봉투</a><a href="products-general.html">일반봉투</a></div>
+        <div class="menu-group"><h3>공장소개</h3><a href="factory-extrusion.html">압출시설</a><a href="factory-printing.html">인쇄시설</a><a href="factory-processing.html">가공시설</a></div>
+        <div class="menu-group"><h3>인증현황</h3><a href="certification.html">인증서</a></div>
+        <div class="menu-group"><h3>연락문의</h3><a href="contact-faq.html">자주찾는질문</a><a href="contact-request.html">상담요청</a></div>
+      </div></div></nav>
+    </header>
+    <main class="main-layout">
+      <aside class="side-nav">
+        <h2>회사소개</h2>
+        <a href="about-history.html">연혁</a>
+        <a class="is-active" href="about-ceo.html">CEO 인사말</a>
+        <a href="about-location.html">오시는 길</a>
+      </aside>
+      <section class="content-panel">
+        <h1>CEO 인사말</h1>
+        <p class="lead">대표 인사말은 기업의 신뢰와 방향성을 보여주는 중요한 영역입니다. 아래 예시는 수정용 초안입니다.</p>
+        <div class="section-block">
+          <p>
+            안녕하십니까. LK 폴리머를 찾아주셔서 감사합니다.
+            당사는 종량제봉투와 일반봉투를 중심으로 고객이 필요로 하는 제품을 안정적으로 생산하고 공급하기 위해 노력하고 있습니다.
+          </p>
+          <p>
+            제조업의 기본은 품질과 약속이라고 생각합니다. LK 폴리머는 현장 중심의 생산 관리와 꾸준한 품질 점검을 통해
+            믿고 맡길 수 있는 제조 파트너가 되기 위해 한 걸음씩 성장해 나가고 있습니다.
+          </p>
+          <p>
+            앞으로도 고객과 함께 오래가는 기업이 될 수 있도록 최선을 다하겠습니다.
+          </p>
+        </div>
+        <div class="section-block">
+          <div class="mini-banner">
+            <h3>문구 수정 포인트</h3>
+            <p>대표명, 회사 철학, 고객 약속, 품질 방향성, 향후 계획 등을 실제 내용에 맞게 반영하시면 자연스럽게 완성됩니다.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><div><strong>LK 폴리머</strong><div>비닐봉투 제조업체 / 종량제봉투 / 일반봉투</div></div><div><div>주소: 추후 입력 예정</div><div>전화: 추후 입력 예정 / 이메일: 추후 입력 예정</div></div></div></footer>
+  </div>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
