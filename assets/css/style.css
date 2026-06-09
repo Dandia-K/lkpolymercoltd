@@ -621,10 +621,13 @@ button {
 
   .hero,
   .content-panel,
-  .side-nav,
   .global-nav-panel {
     padding: 24px;
     border-radius: 24px;
+  }
+
+  .side-nav {
+    display: none;
   }
 
   .quick-links,
