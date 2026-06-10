@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   common: {
-    brandName: "LK POLYMER",
+    brandName: "엘케이폴리머",
     brandTagline: "종량제봉투 · 일반봉투 제조 전문기업",
     menuAbout: "회사소개",
     menuAboutHistory: "연혁",
@@ -19,7 +19,7 @@ window.SITE_CONTENT = {
     menuContact: "연락문의",
     menuContactFaq: "자주찾는질문",
     menuContactRequest: "상담요청",
-    footerLine: "LK 폴리머 | 대표이사 김지수 | 주소 경기도 화성시 만세구 향남읍 토성로 310-32 | 전화번호 031-352-6317 | 사업자등록번호 381-86-03790 | Office Hours 평일 09:00~17:00 (공휴일 휴무) | Copyright © LK POLYMER CO., LTD. All Rights Reserved."
+    footerLine: "엘케이폴리머 | 대표이사 김지수 | 주소 경기도 화성시 만세구 향남읍 토성로 310-32 | 전화번호 031-352-6317 | 사업자등록번호 381-86-03790 | Office Hours 평일 09:00~17:00 (공휴일 휴무) | Copyright © LK POLYMER CO., LTD. All Rights Reserved."
   },
   pages: {
     home: {
