@@ -285,6 +285,7 @@ button {
   align-self: start;
   position: sticky;
   top: 118px;
+  text-align: center;
 }
 
 .side-nav h2 {
@@ -296,7 +297,7 @@ button {
 .side-nav .side-group-title {
   display: block;
   margin: 18px 0 8px;
-  padding: 0 14px;
+  padding: 0;
   font-size: 0.84rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -324,6 +325,7 @@ button {
 
 .content-panel {
   padding: 36px;
+  text-align: center;
 }
 
 .content-panel h1,
@@ -340,7 +342,8 @@ button {
 }
 
 .content-panel ul {
-  padding-left: 20px;
+  padding-left: 0;
+  list-style-position: inside;
 }
 
 .lead {
@@ -370,6 +373,7 @@ button {
 .info-card,
 .stats-card {
   padding: 22px;
+  text-align: center;
 }
 
 .info-card h3,
@@ -392,38 +396,34 @@ button {
 
 .timeline {
   position: relative;
-  margin: 0;
-  padding: 0 0 0 20px;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
+  text-align: center;
 }
 
 .timeline::before {
-  content: "";
-  position: absolute;
-  left: 3px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: var(--line);
+  display: none;
 }
 
 .timeline li {
   position: relative;
   margin-bottom: 18px;
-  padding-left: 20px;
+  padding: 0;
 }
 
 .timeline li::before {
   content: "";
-  position: absolute;
-  left: -22px;
-  top: 10px;
+  display: inline-block;
   width: 12px;
   height: 12px;
+  margin-right: 10px;
   border-radius: 50%;
   background: var(--accent);
   border: 3px solid #fff;
   box-shadow: 0 0 0 1px rgba(217, 143, 57, 0.3);
+  vertical-align: middle;
 }
 
 .certificate-item {
@@ -431,6 +431,7 @@ button {
   border-radius: 22px;
   background: var(--panel-soft);
   border: 1px solid var(--line);
+  text-align: center;
 }
 
 .certificate-item img {
@@ -446,10 +447,45 @@ button {
   font-size: 1rem;
 }
 
+.certificate-status {
+  display: grid;
+  place-items: center;
+  min-height: 150px;
+  border-radius: 18px;
+  border: 1px dashed rgba(29, 143, 79, 0.36);
+  background:
+    radial-gradient(circle at top, rgba(79, 191, 98, 0.14), transparent 55%),
+    #ffffff;
+  color: var(--brand-strong);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.certificate-status.is-issued {
+  border-style: solid;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.18), transparent 58%),
+    linear-gradient(135deg, var(--brand), var(--brand-strong));
+  color: #ffffff;
+}
+
+.certificate-item .button {
+  display: inline-flex;
+  margin-top: 14px;
+  padding: 11px 18px;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.certificate-item p {
+  margin: 10px auto 0;
+}
+
 .faq-item {
   padding: 22px;
   border-radius: 22px;
   background: var(--panel-soft);
+  text-align: center;
 }
 
 .contact-form {
@@ -462,6 +498,7 @@ button {
   gap: 8px;
   color: var(--brand-strong);
   font-weight: 600;
+  text-align: center;
 }
 
 .contact-form input,
@@ -474,6 +511,7 @@ button {
   background: #fff;
   font: inherit;
   color: var(--text);
+  text-align: center;
 }
 
 .contact-form textarea {
@@ -483,6 +521,7 @@ button {
 
 .button {
   width: fit-content;
+  margin: 0 auto;
   border: 0;
   border-radius: 999px;
   padding: 14px 22px;
@@ -496,6 +535,7 @@ button {
   border-radius: 24px;
   background: linear-gradient(135deg, rgba(79, 191, 98, 0.1), rgba(55, 176, 213, 0.08));
   border: 1px solid rgba(79, 191, 98, 0.16);
+  text-align: center;
 }
 
 .map-embed {
