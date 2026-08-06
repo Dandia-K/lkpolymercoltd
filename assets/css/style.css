@@ -266,8 +266,8 @@ button {
   width: min(calc(100% - 40px), var(--container));
   margin: 34px auto 70px;
   display: grid;
-  grid-template-columns: 290px minmax(0, 1fr);
-  gap: 30px;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 24px;
 }
 
 .side-nav,
@@ -281,7 +281,7 @@ button {
 }
 
 .side-nav {
-  padding: 24px;
+  padding: 20px 16px;
   align-self: start;
   position: sticky;
   top: 118px;
@@ -310,7 +310,7 @@ button {
 
 .side-nav a {
   display: block;
-  padding: 13px 14px;
+  padding: 11px 10px;
   border-radius: 16px;
   color: var(--muted);
   transition: background 0.2s ease, color 0.2s ease;
