@@ -237,7 +237,7 @@ button {
 
 .quick-links {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: 1.35fr repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin-top: 34px;
   text-align: center;
@@ -262,12 +262,79 @@ button {
   font-size: 0.92rem;
 }
 
+.quick-links a.is-primary {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 14px 34px rgba(5, 42, 22, 0.22);
+}
+
+.quick-links a.is-primary strong {
+  color: var(--brand-strong);
+}
+
+.quick-links a.is-primary span {
+  color: #3f5d4a;
+}
+
 .main-layout {
   width: min(calc(100% - 40px), var(--container));
   margin: 34px auto 70px;
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
   gap: 24px;
+}
+
+.paybag-focus {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.paybag-focus-media {
+  min-height: 360px;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.paybag-focus-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paybag-focus-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 18px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(79, 191, 98, 0.11), rgba(55, 176, 213, 0.08));
+  border: 1px solid rgba(29, 143, 79, 0.16);
+  text-align: center;
+}
+
+.paybag-focus-copy .focus-eyebrow {
+  margin: 0 0 10px;
+  color: var(--brand-strong);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.paybag-focus-copy h2 {
+  margin-bottom: 12px;
+}
+
+.focus-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
 }
 
 .side-nav,
@@ -520,6 +587,9 @@ button {
 }
 
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
   margin: 0 auto;
   border: 0;
@@ -528,6 +598,12 @@ button {
   background: linear-gradient(135deg, var(--brand), var(--brand-strong));
   color: #fff;
   cursor: pointer;
+}
+
+.button.button-outline {
+  border: 1px solid rgba(29, 143, 79, 0.28);
+  background: #ffffff;
+  color: var(--brand-strong);
 }
 
 .mini-banner {
@@ -645,6 +721,10 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .paybag-focus {
+    grid-template-columns: 1fr;
+  }
+
   .side-nav {
     position: static;
   }
@@ -759,6 +839,21 @@ button {
   .product-gallery-main img,
   .gallery-thumb img {
     height: auto;
+  }
+
+  .paybag-focus-media {
+    min-height: 240px;
+  }
+
+  .focus-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .focus-actions .button {
+    width: 100%;
+    justify-content: center;
   }
 
   .brand-copy span {
