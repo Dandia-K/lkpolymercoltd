@@ -298,8 +298,7 @@ button {
   box-shadow: var(--shadow);
 }
 
-.paybag-focus-media img,
-.paybag-focus-media video {
+.paybag-focus-media img {
   display: block;
   width: 100%;
   height: 100%;
