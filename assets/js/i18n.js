@@ -63,6 +63,10 @@
     document.querySelectorAll("a[href]").forEach((link) => {
       if (!sourceLinks.has(link)) sourceLinks.set(link, link.getAttribute("href"));
       const original = sourceLinks.get(link);
+      if (original.replace(/[\s()-]/g, "") === "tel:0313526317") {
+        link.setAttribute("href", language === "ko" ? original : "tel:+82313526317");
+        return;
+      }
       if (original.startsWith("#")) return;
       const url = new URL(original, window.location.href);
       if (url.origin !== current.origin || !url.pathname.endsWith(".html")) return;

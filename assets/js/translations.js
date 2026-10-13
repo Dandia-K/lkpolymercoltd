@@ -46,7 +46,8 @@
     ["주소", "Address", "所在地"],
     ["경기도 화성시 만세구 향남읍 토성로 310-32", "310-32, Toseong-ro, Hyangnam-eup, Manse-gu, Hwaseong-si, Gyeonggi-do, Republic of Korea", "韓国 京畿道 華城市 万歳区 郷南邑 土城路 310-32"],
     ["연락처", "Contact Details", "連絡先"],
-    ["전화번호: 031-352-6317", "Phone: 031-352-6317", "電話番号：031-352-6317"],
+    ["031-352-6317", "(+82)31-352-6317", "(+82)31-352-6317"],
+    ["전화번호: 031-352-6317", "Phone: (+82)31-352-6317", "電話番号：(+82)31-352-6317"],
     ["방문 안내", "Visiting Us", "ご来訪について"],
     ["방문 전 연락주시면 보다 원활한 안내가 가능합니다.", "Please contact us before your visit so we can assist you smoothly.", "ご来訪前にご連絡いただくと、スムーズにご案内できます。"],
     ["네이버지도로 보기", "View on Naver Map", "NAVERマップで見る"],
@@ -80,7 +81,7 @@
     ["운영시간", "Business Hours", "営業時間"],
     ["평일 09:00~17:00 (공휴일 휴무)", "Weekdays 09:00-17:00 (closed on public holidays)", "平日 09:00～17:00（祝日休業）"],
     ["문의 시 제품 종류, 용량·규격, 수량, 인쇄 여부, 희망 납기를 알려주시면 더욱 정확한 상담이 가능합니다.", "For a more accurate consultation, please provide the product type, capacity and dimensions, quantity, printing requirements and desired delivery date.", "製品の種類、容量・規格、数量、印刷の有無、ご希望の納期をお知らせいただくと、より詳しくご案内できます。"],
-    ["엘케이폴리머 종량제봉투 및 일반봉투 생산 상담. 전화 031-352-6317 또는 이메일 d_deav@naver.com으로 문의해 주세요.", "Contact LK POLYMER about official waste bags and general-purpose bags. Phone: 031-352-6317. Email: d_deav@naver.com.", "エルケイポリマーの指定ごみ袋・一般袋の製造相談。電話031-352-6317、またはメールd_deav@naver.comへお問い合わせください。"],
+    ["엘케이폴리머 종량제봉투 및 일반봉투 생산 상담. 전화 031-352-6317 또는 이메일 d_deav@naver.com으로 문의해 주세요.", "Contact LK POLYMER about official waste bags and general-purpose bags. Phone: (+82)31-352-6317. Email: d_deav@naver.com.", "エルケイポリマーの指定ごみ袋・一般袋の製造相談。電話(+82)31-352-6317、またはメールd_deav@naver.comへお問い合わせください。"],
     ["원단 생산의 시작점이 되는 압출설비 소개 영역입니다.", "An introduction to the extrusion facilities where film production begins.", "フィルム製造の出発点となる押出設備をご紹介します。"],
     ["설비 개요", "Equipment Overview", "設備概要"],
     ["압출설비 보유 현황, 생산 가능 재질, 작업 안정성 등에 대한 설명을 넣을 수 있습니다.", "This section can describe the extrusion equipment, supported materials and operational stability.", "押出設備の保有状況、対応可能な材質、作業の安定性などの説明を掲載できます。"],
@@ -178,8 +179,8 @@
   }
   add(
     "엘케이폴리머 | 대표이사 김지수 | 주소 경기도 화성시 만세구 향남읍 토성로 310-32 | 전화번호 031-352-6317 | 사업자등록번호 381-86-03790 | Office Hours 평일 09:00~17:00 (공휴일 휴무) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
-    "LK POLYMER | CEO Kim Ji-su | Address: 310-32, Toseong-ro, Hyangnam-eup, Manse-gu, Hwaseong-si, Gyeonggi-do, Republic of Korea | Phone: 031-352-6317 | Business Registration No. 381-86-03790 | Business Hours: Weekdays 09:00-17:00 (closed on public holidays) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
-    "エルケイポリマー | 代表取締役 キム・ジス | 所在地：韓国 京畿道 華城市 万歳区 郷南邑 土城路 310-32 | 電話番号：031-352-6317 | 事業者登録番号：381-86-03790 | 営業時間：平日 09:00～17:00（祝日休業） | Copyright © LK POLYMER CO., LTD. All Rights Reserved."
+    "LK POLYMER | CEO Kim Ji-su | Address: 310-32, Toseong-ro, Hyangnam-eup, Manse-gu, Hwaseong-si, Gyeonggi-do, Republic of Korea | Phone: (+82)31-352-6317 | Business Registration No. 381-86-03790 | Business Hours: Weekdays 09:00-17:00 (closed on public holidays) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
+    "エルケイポリマー | 代表取締役 キム・ジス | 所在地：韓国 京畿道 華城市 万歳区 郷南邑 土城路 310-32 | 電話番号：(+82)31-352-6317 | 事業者登録番号：381-86-03790 | 営業時間：平日 09:00～17:00（祝日休業） | Copyright © LK POLYMER CO., LTD. All Rights Reserved."
   );
   window.SITE_TRANSLATIONS = dictionary;
 })();
