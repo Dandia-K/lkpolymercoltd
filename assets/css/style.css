@@ -427,14 +427,27 @@ button {
 .feature-grid,
 .card-grid,
 .certificate-grid,
-.faq-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.faq-grid,
+.stats-band {
+  --card-width: calc((100% - 18px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 18px;
 }
 
-.card-grid.columns-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.feature-grid > *,
+.card-grid > *,
+.certificate-grid > *,
+.faq-grid > *,
+.stats-band > * {
+  flex: 0 0 var(--card-width);
+  min-width: 0;
+}
+
+.card-grid.columns-3,
+.stats-band {
+  --card-width: calc((100% - 36px) / 3);
 }
 
 .info-card,
@@ -449,9 +462,6 @@ button {
 }
 
 .stats-band {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
   margin-top: 24px;
 }
 
@@ -718,10 +728,13 @@ button {
 
 @media (max-width: 1100px) {
   .menu-grid,
-  .quick-links,
+  .quick-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .card-grid.columns-3,
   .stats-band {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --card-width: calc((100% - 18px) / 2);
   }
 
   .main-layout {
@@ -801,13 +814,17 @@ button {
 
   .quick-links,
   .menu-grid,
-  .feature-grid,
-  .card-grid,
-  .certificate-grid,
-  .faq-grid,
-  .stats-band,
   .product-gallery-thumbs {
     grid-template-columns: 1fr;
+  }
+
+  .feature-grid,
+  .card-grid,
+  .card-grid.columns-3,
+  .certificate-grid,
+  .faq-grid,
+  .stats-band {
+    --card-width: 100%;
   }
 
   .menu-grid {
