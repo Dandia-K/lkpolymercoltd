@@ -76,6 +76,6 @@ window.SITE_CONTENT = {
     factoryProcessing: { sideTitle: "공장소개", sideExtrusion: "압출시설", sideProcessing: "가공시설", title: "가공시설", lead: "완제품 단계의 절단, 접합, 포장 등 가공 공정을 소개하는 페이지입니다." },
     certification: { sideTitle: "인증현황", sideDoc: "인증서", title: "인증서", lead: "엘케이폴리머가 보유한 단체표준인증서를 확인하실 수 있습니다." },
     contactFaq: { sideTitle: "연락문의", sideFaq: "자주찾는질문", sideRequest: "상담요청", title: "자주찾는질문", lead: "실제 문의 패턴에 따라 질문과 답변을 축적해 나가기 좋은 구조입니다." },
-    contactRequest: { sideTitle: "연락문의", sideFaq: "자주찾는질문", sideRequest: "상담요청", title: "상담요청", lead: "현재는 정적 폼 구조만 먼저 넣어두었습니다. 추후 이메일 연동이나 폼 서비스 연동으로 확장할 수 있습니다." }
+    contactRequest: { sideTitle: "연락문의", sideFaq: "자주찾는질문", sideRequest: "상담요청", title: "상담요청", lead: "종량제봉투 및 일반봉투 생산 상담은 아래 전화번호 또는 이메일로 직접 문의해 주세요." }
   }
 };
