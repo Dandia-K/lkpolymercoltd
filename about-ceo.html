@@ -4,14 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회사소개 - CEO 인사말 | LK 폴리머</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261013-i18n">
 </head>
 <body data-page="aboutCeo">
   <div class="site-shell">
     <header class="header-wrap">
       <div class="header-inner">
         <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="LK 폴리머 로고"><div class="brand-copy"><strong data-text-key="brandName">엘케이폴리머</strong><span data-text-key="brandTagline">종량제봉투 · 일반봉투 제조 전문기업</span></div></a>
-        <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" data-menu-toggle><span></span></button>
+        <div class="header-actions">
+          <div class="language-picker" data-language-picker>
+            <button class="language-toggle" type="button" data-language-toggle aria-label="언어 선택 (KR)" aria-expanded="false" aria-controls="language-options">
+              <span data-current-language>KR</span>
+            </button>
+            <div class="language-options" id="language-options" data-language-options role="group" aria-label="언어 선택" hidden>
+              <button type="button" data-language="ko" lang="ko" aria-pressed="true"><strong>KR</strong><span>한국어</span></button>
+              <button type="button" data-language="en" lang="en" aria-pressed="false"><strong>EN</strong><span>English</span></button>
+              <button type="button" data-language="ja" lang="ja" aria-pressed="false"><strong>JP</strong><span>日本語</span></button>
+            </div>
+          </div>
+          <button class="menu-toggle" type="button" aria-label="전체 메뉴 열기" aria-expanded="false" data-menu-toggle><span></span></button>
+        </div>
       </div>
       <nav class="global-nav" data-global-menu><div class="global-nav-panel"><div class="menu-grid">
         <div class="menu-group"><h3 data-text-key="menuAbout">회사소개</h3><a href="about-history.html" data-text-key="menuAboutHistory">연혁</a><a href="about-ceo.html" data-text-key="menuAboutCeo">CEO 인사말</a><a href="about-location.html" data-text-key="menuAboutLocation">오시는 길</a></div>
@@ -73,7 +85,9 @@
     <footer class="site-footer"><div class="footer-inner"><span data-text-key="footerLine">엘케이폴리머 | 대표이사 김지수 | 주소 경기도 화성시 만세구 향남읍 토성로 310-32 | 전화번호 031-352-6317 | 사업자등록번호 381-86-03790 | Office Hours 평일 09:00~17:00 (공휴일 휴무) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.</span></div></footer>
   </div>
   <script src="assets/js/content.js"></script>
-  <script src="assets/js/site.js"></script>
+  <script src="assets/js/translations.js?v=20261013"></script>
+  <script src="assets/js/i18n.js?v=20261013"></script>
+  <script src="assets/js/site.js?v=20261013"></script>
 </body>
 </html>
 

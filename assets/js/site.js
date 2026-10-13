@@ -26,9 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (toggle && menu) {
     toggle.addEventListener("click", () => {
+      window.SITE_I18N?.closePicker();
       const isOpen = toggle.getAttribute("aria-expanded") === "true";
       toggle.setAttribute("aria-expanded", String(!isOpen));
       menu.classList.toggle("is-open", !isOpen);
+      window.SITE_I18N?.syncMenuLabel();
     });
   }
 
@@ -51,4 +53,5 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+  window.SITE_I18N?.init();
 });

@@ -1,0 +1,185 @@
+(() => {
+  const entries = [
+    ["Standard Waste Bag Manufacturer", "Official Waste Bag Manufacturer", "指定ごみ袋の専門メーカー"],
+    ["MAIN PRODUCT", "MAIN PRODUCT", "主力製品"],
+    ["엘케이폴리머", "LK POLYMER", "エルケイポリマー"],
+    ["종량제봉투 · 일반봉투 제조 전문기업", "Manufacturer of official waste bags and general-purpose bags", "指定ごみ袋・一般袋の専門メーカー"],
+    ["종량제봉투 전문 제조 · 일반봉투 주문 생산", "Official waste bag manufacturing / Custom general-purpose bags", "指定ごみ袋の専門製造・一般袋の受注生産"],
+    ["회사소개", "About Us", "会社案内"],
+    ["연혁", "History", "沿革"],
+    ["CEO 인사말", "CEO Message", "代表挨拶"],
+    ["오시는 길", "Location", "アクセス"],
+    ["제품소개", "Products", "製品案内"],
+    ["종량제봉투", "Official Waste Bags", "指定ごみ袋"],
+    ["일반봉투", "General-Purpose Bags", "一般袋"],
+    ["공장소개", "Our Factory", "工場案内"],
+    ["공장전경", "Factory Overview", "工場外観"],
+    ["압출시설", "Extrusion Facilities", "押出設備"],
+    ["가공시설", "Bag-Making Facilities", "製袋設備"],
+    ["인증현황", "Certifications", "認証情報"],
+    ["인증서", "Certificates", "証明書・認証書"],
+    ["연락문의", "Contact", "お問い合わせ"],
+    ["자주찾는질문", "FAQ", "よくあるご質問"],
+    ["상담요청", "Contact for Consultation", "ご相談窓口"],
+    ["전체 메뉴", "All Pages", "全メニュー"],
+    ["전체 메뉴 열기", "Open all pages", "全メニューを開く"],
+    ["전체 메뉴 닫기", "Close all pages", "全メニューを閉じる"],
+    ["바로가기", "Quick Links", "クイックリンク"],
+    ["엘케이폴리머 로고", "LK POLYMER logo", "エルケイポリマーのロゴ"],
+    ["LK 폴리머 로고", "LK POLYMER logo", "エルケイポリマーのロゴ"],
+    ["엘케이폴리머 메인으로 이동", "Go to the LK POLYMER homepage", "エルケイポリマーのホームへ"],
+    ["엘케이폴리머 공장 전경", "LK POLYMER factory overview", "エルケイポリマーの工場外観"],
+    ["대표 인사말은 기업의 신뢰와 방향성을 보여주는 중요한 영역입니다. 아래 예시는 수정용 초안입니다.", "The CEO message introduces the company's values and direction. The text below is a draft for review.", "代表挨拶は、企業の信頼性と方針を伝える大切な内容です。以下は編集用の草案です。"],
+    ["안녕하십니까. 엘케이폴리머를 찾아주신 여러분께 진심으로 감사드립니다. 저희 엘케이폴리머는 종량제봉투와 일반봉투를 생산하는 제조업체로서, 고객 여러분께 신뢰와 믿음을 드릴 수 있는 기업이 되기 위해 늘 성실한 자세로 현장을 지켜오고 있습니다.", "Thank you for visiting LK POLYMER. As a manufacturer of official waste bags and general-purpose bags, we work diligently every day to be a company our customers can trust.", "エルケイポリマーのホームページをご覧いただき、誠にありがとうございます。当社は指定ごみ袋と一般袋を製造するメーカーとして、お客様に信頼していただける企業を目指し、日々誠実に製造に取り組んでおります。"],
+    ["저희는 제조업의 기본이 정확한 공정과 책임 있는 납기라고 생각합니다. 아무리 좋은 제품이라도 약속한 품질과 일정이 지켜지지 않으면 고객의 신뢰를 얻을 수 없기에, 엘케이폴리머는 생산 전 과정에서 세심한 관리와 꾸준한 점검을 통해 안정적인 품질을 유지하고 고객이 안심하고 맡길 수 있는 생산 체계를 갖추기 위해 노력하고 있습니다.", "We believe that precise processes and reliable delivery are the foundations of manufacturing. Quality products earn trust only when promised standards and schedules are met. Through careful management and regular inspections throughout production, we strive to maintain consistent quality and a production system our customers can depend on.", "私たちは、正確な工程と責任ある納期対応が製造業の基本であると考えています。優れた製品であっても、約束した品質と日程を守らなければ、お客様の信頼は得られません。全工程での細やかな管理と継続的な点検により、安定した品質と安心してお任せいただける生産体制の構築に努めております。"],
+    ["또한 고객이 필요로 하는 요구사항에 더욱 성실하게 대응하고, 우수한 납기와 책임 있는 공급으로 현장에서 실질적인 도움이 되는 파트너가 되고자 합니다. 작은 요청에도 귀 기울이고, 한 번의 거래가 아닌 오랜 신뢰로 이어질 수 있도록 언제나 진정성 있는 자세로 최선을 다하겠습니다.", "We respond carefully to customer requirements and aim to be a practical, dependable partner through timely delivery and responsible supply. We listen to every request, however small, and work sincerely to build lasting relationships rather than one-time transactions.", "お客様のご要望に誠実に対応し、確かな納期と責任ある供給を通じて、実務に役立つパートナーでありたいと考えています。小さなご要望にも耳を傾け、一度のお取引にとどまらず、長い信頼関係につながるよう、常に真摯な姿勢で最善を尽くしてまいります。"],
+    ["앞으로도 엘케이폴리머는 신뢰와 믿음을 바탕으로 고객 여러분과 함께 성장하며, 정확한 공정과 우수한 납기로 보답하는 기업이 되겠습니다.", "LK POLYMER will continue to grow with our customers, rewarding their trust with precise manufacturing processes and reliable delivery.", "これからもエルケイポリマーは、お客様との信頼を基に共に成長し、正確な工程と確かな納期でご期待に応える企業であり続けます。"],
+    ["대표이사 김지수", "CEO Kim Ji-su", "代表取締役 キム・ジス"],
+    ["기업의 시작과 성장 과정을 정리하는 페이지입니다. 아래 문구는 추후 실제 연혁 자료에 맞게 수정하시면 됩니다.", "This page presents the company's development. Update the draft entries below to reflect the actual company history.", "会社の設立と成長の過程を紹介するページです。以下の内容は実際の沿革資料に合わせて編集してください。"],
+    ["엘케이폴리머의 성장과정.", "The growth of LK POLYMER.", "エルケイポリマーの歩み。"],
+    ["엘케이폴리머 설립", "LK POLYMER established", "エルケイポリマー設立"],
+    ["회사표준 재정", "Company standards established", "社内標準制定"],
+    ["단체표준인증 획득", "Group standard certification obtained", "団体標準認証取得"],
+    ["환경인증표지 획득", "Environmental label certification obtained", "環境ラベル認証取得"],
+    ["엘케이폴리머를 방문하시는 분들을 위해 사업장 위치와 기본 안내 정보를 정리한 페이지입니다.", "Find our business location and information for your visit to LK POLYMER.", "エルケイポリマーへお越しになる方に、事業所の所在地と基本情報をご案内します。"],
+    ["주소와 지도 링크를 입력하면 바로 사용할 수 있는 안내 페이지입니다.", "This location page can be used once the address and map links are entered.", "住所と地図リンクを入力すると利用できるアクセス案内ページです。"],
+    ["주소", "Address", "所在地"],
+    ["경기도 화성시 만세구 향남읍 토성로 310-32", "310-32, Toseong-ro, Hyangnam-eup, Manse-gu, Hwaseong-si, Gyeonggi-do, Republic of Korea", "韓国 京畿道 華城市 万歳区 郷南邑 土城路 310-32"],
+    ["연락처", "Contact Details", "連絡先"],
+    ["전화번호: 031-352-6317", "Phone: 031-352-6317", "電話番号：031-352-6317"],
+    ["방문 안내", "Visiting Us", "ご来訪について"],
+    ["방문 전 연락주시면 보다 원활한 안내가 가능합니다.", "Please contact us before your visit so we can assist you smoothly.", "ご来訪前にご連絡いただくと、スムーズにご案内できます。"],
+    ["네이버지도로 보기", "View on Naver Map", "NAVERマップで見る"],
+    ["엘케이폴리머 구글 지도", "LK POLYMER on Google Maps", "エルケイポリマーのGoogleマップ"],
+    ["엘케이폴리머의 주요 증명서와 인증현황을 확인하실 수 있습니다.", "View LK POLYMER's key documents and certification status.", "エルケイポリマーの主な証明書と認証状況をご確認いただけます。"],
+    ["엘케이폴리머가 보유한 단체표준인증서를 확인하실 수 있습니다.", "View LK POLYMER's group standard certificates.", "エルケイポリマーの団体標準認証書をご確認いただけます。"],
+    ["사업자등록증", "Business Registration Certificate", "事業者登録証"],
+    ["엘케이폴리머 법인사업자 등록증입니다.", "LK POLYMER's corporate business registration certificate.", "エルケイポリマーの法人事業者登録証です。"],
+    ["PDF 전체 보기", "View Full PDF", "PDF全体を見る"],
+    ["중소기업확인서", "SME Confirmation Certificate", "中小企業確認書"],
+    ["공공기관 입찰용 중소기업확인서입니다.", "SME confirmation certificate for public-sector bidding.", "公共機関の入札用中小企業確認書です。"],
+    ["직접생산확인증명서", "Direct Production Confirmation Certificate", "直接生産確認証明書"],
+    ["쓰레기봉투 직접생산확인증명서입니다.", "Certificate confirming the direct production of waste bags.", "ごみ袋の直接生産を確認する証明書です。"],
+    ["환경표지인증", "Environmental Label Certification", "環境ラベル認証"],
+    ["종량제 쓰레기봉투 환경표지인증서입니다.", "Environmental label certificate for official waste bags.", "指定ごみ袋の環境ラベル認証書です。"],
+    ["준비중", "Coming Soon", "準備中"],
+    ["인증 자료를 준비하고 있습니다.", "Certification documents are being prepared.", "認証資料を準備しております。"],
+    ["실제 문의 패턴에 따라 질문과 답변을 축적해 나가기 좋은 구조입니다.", "This section can be expanded with questions and answers based on actual customer inquiries.", "実際のお問い合わせに合わせて、質問と回答を追加していくためのページです。"],
+    ["Q. 제품 규격 상담은 어떻게 진행되나요?", "Q. How can I discuss product specifications?", "Q. 製品仕様の相談はどのように進めますか？"],
+    ["A. 필요한 용도, 규격, 수량, 인쇄 여부 등을 알려주시면 검토 후 안내드리는 방식으로 내용을 수정할 수 있습니다.", "A. This draft answer can be updated to explain how we review the intended use, specifications, quantity and printing requirements before providing guidance.", "A. 用途、規格、数量、印刷の有無などをお知らせいただき、検討後にご案内する内容へ編集できます。"],
+    ["Q. 맞춤 제작이 가능한가요?", "Q. Are custom orders available?", "Q. オーダーメイド製造は可能ですか？"],
+    ["A. 실제 생산 가능 범위에 맞춰 맞춤 제작 여부 및 최소 주문 기준을 안내하는 문구로 교체하시면 됩니다.", "A. Replace this draft with information about available customization and minimum order quantities based on actual production capabilities.", "A. 実際の生産可能範囲に合わせ、オーダーメイドの可否と最低注文数量をご案内する文章へ変更してください。"],
+    ["종량제봉투 및 일반봉투 생산 상담은 아래 전화번호 또는 이메일로 직접 문의해 주세요.", "For official waste bag and general-purpose bag production inquiries, contact us directly by phone or email below.", "指定ごみ袋および一般袋の製造に関するご相談は、下記の電話番号またはメールアドレスへ直接お問い合わせください。"],
+    ["전화 문의", "Phone Inquiries", "お電話でのお問い合わせ"],
+    ["제품 규격과 수량, 납기 등을 상담해 드립니다.", "Contact us to discuss product specifications, quantities and delivery schedules.", "製品の規格、数量、納期などについてご相談を承ります。"],
+    ["전화하기", "Call Us", "電話する"],
+    ["이메일 문의", "Email Inquiries", "メールでのお問い合わせ"],
+    ["필요한 제품 사양이나 자료를 보내 주세요.", "Please send your product specifications and supporting materials.", "ご希望の製品仕様や資料をお送りください。"],
+    ["이메일 보내기", "Send an Email", "メールを送る"],
+    ["상담 안내", "Consultation Information", "ご相談について"],
+    ["운영시간", "Business Hours", "営業時間"],
+    ["평일 09:00~17:00 (공휴일 휴무)", "Weekdays 09:00-17:00 (closed on public holidays)", "平日 09:00～17:00（祝日休業）"],
+    ["문의 시 제품 종류, 용량·규격, 수량, 인쇄 여부, 희망 납기를 알려주시면 더욱 정확한 상담이 가능합니다.", "For a more accurate consultation, please provide the product type, capacity and dimensions, quantity, printing requirements and desired delivery date.", "製品の種類、容量・規格、数量、印刷の有無、ご希望の納期をお知らせいただくと、より詳しくご案内できます。"],
+    ["엘케이폴리머 종량제봉투 및 일반봉투 생산 상담. 전화 031-352-6317 또는 이메일 d_deav@naver.com으로 문의해 주세요.", "Contact LK POLYMER about official waste bags and general-purpose bags. Phone: 031-352-6317. Email: d_deav@naver.com.", "エルケイポリマーの指定ごみ袋・一般袋の製造相談。電話031-352-6317、またはメールd_deav@naver.comへお問い合わせください。"],
+    ["원단 생산의 시작점이 되는 압출설비 소개 영역입니다.", "An introduction to the extrusion facilities where film production begins.", "フィルム製造の出発点となる押出設備をご紹介します。"],
+    ["설비 개요", "Equipment Overview", "設備概要"],
+    ["압출설비 보유 현황, 생산 가능 재질, 작업 안정성 등에 대한 설명을 넣을 수 있습니다.", "This section can describe the extrusion equipment, supported materials and operational stability.", "押出設備の保有状況、対応可能な材質、作業の安定性などの説明を掲載できます。"],
+    ["품질 관리", "Quality Control", "品質管理"],
+    ["두께 편차 관리, 생산 조건 점검, 원단 품질 검수 등 핵심 포인트를 정리할 수 있습니다.", "This section can summarize thickness control, production-condition checks and film quality inspections.", "厚みのばらつき管理、生産条件の点検、フィルムの品質検査などの要点を紹介できます。"],
+    ["엘케이폴리머의 공장 외부 전경과 사업장 모습을 확인하실 수 있습니다.", "Explore the exterior and premises of LK POLYMER's factory.", "エルケイポリマーの工場外観と事業所の様子をご覧いただけます。"],
+    ["완제품 단계의 절단, 접합, 포장 등 가공 공정을 소개하는 페이지입니다.", "An introduction to cutting, sealing, packaging and other bag-making processes.", "切断、接合、包装など、完成品に至る製袋工程をご紹介します。"],
+    ["가공 공정", "Bag-Making Process", "製袋工程"],
+    ["사이즈별 가공, 마감 처리, 생산 흐름 등 가공 현장의 특징을 표현할 수 있습니다.", "This section can describe size-specific processing, finishing and the production workflow.", "サイズ別の加工、仕上げ処理、生産の流れなど、製袋現場の特徴を紹介できます。"],
+    ["출고 준비", "Preparing for Shipment", "出荷準備"],
+    ["검수, 포장, 적재 및 납품 준비와 관련한 프로세스를 정리하기 좋습니다.", "This section can outline inspection, packaging, loading and delivery preparation.", "検品、包装、積載、納品準備などの工程を紹介するための内容です。"],
+    ["종량제봉투 제조의 신뢰 기준", "A Trusted Standard in Official Waste Bag Manufacturing", "指定ごみ袋製造の信頼の基準"],
+    ["한국프라스틱공업협동조합 규격과 지자체 요구사항을 바탕으로 종량제봉투를 생산하며, 정확한 공정 관리와 안정적인 품질, 신뢰할 수 있는 납기로 고객의 요구에 책임 있게 대응합니다.", "We manufacture official waste bags to the standards of the Korea Plastics Industry Cooperative and local government requirements, meeting customer needs through precise process control, consistent quality and reliable delivery.", "韓国プラスチック工業協同組合の規格と自治体の要求事項に基づき指定ごみ袋を製造し、正確な工程管理、安定した品質、確かな納期でお客様のご要望に責任を持って対応します。"],
+    ["규격과 생산 제품 안내", "Specifications and Product Range", "規格・製品のご案内"],
+    ["생산시설", "Production Facilities", "生産設備"],
+    ["압출·가공 공정 안내", "Extrusion and Bag-Making Processes", "押出・製袋工程のご案内"],
+    ["품질 관리 관련 인증 정보", "Quality-Related Certifications", "品質管理に関する認証情報"],
+    ["생산상담", "Production Inquiries", "製造のご相談"],
+    ["규격·수량·납기 문의", "Specifications, Quantities and Delivery", "規格・数量・納期のお問い合わせ"],
+    ["지자체 요구에 맞춘 종량제봉투", "Official Waste Bags for Local Government Requirements", "自治体のご要望に応える指定ごみ袋"],
+    ["규격과 인쇄 사항을 정확히 확인하고, 안정적인 공정 관리와 품질 점검을 거쳐 신뢰할 수 있는 종량제봉투를 생산합니다.", "We verify specifications and printing details, then manufacture dependable official waste bags through stable process control and quality inspections.", "規格と印刷内容を正確に確認し、安定した工程管理と品質点検を通じて、信頼できる指定ごみ袋を製造します。"],
+    ["종량제봉투 자세히 보기", "Explore Official Waste Bags", "指定ごみ袋の詳細を見る"],
+    ["생산 상담 요청", "Contact Us About Production", "製造について相談する"],
+    ["종량제봉투 생산 원칙", "Our Manufacturing Principles", "指定ごみ袋の生産方針"],
+    ["지자체별 규격과 요구사항을 세심하게 확인하고 생산부터 출고까지 전 공정을 책임 있게 관리합니다.", "We carefully review each local government's specifications and requirements, managing every process responsibly from production to shipment.", "各自治体の規格と要求事項を細かく確認し、生産から出荷まで全工程を責任を持って管理します。"],
+    ["규격에 맞춘 생산", "Manufactured to Specification", "規格に合わせた生産"],
+    ["지자체별 용량, 색상, 재질, 인쇄 사항을 확인하여 요구 규격에 맞는 종량제봉투를 생산합니다.", "We check the required capacity, color, material and printing details for each local government and manufacture bags to those specifications.", "自治体ごとの容量、色、材質、印刷内容を確認し、要求規格に適合する指定ごみ袋を製造します。"],
+    ["일관된 품질 관리", "Consistent Quality Control", "一貫した品質管理"],
+    ["원단 생산과 가공 과정의 주요 항목을 점검하여 안정적인 품질이 유지되도록 관리합니다.", "We inspect key aspects of film production and bag-making to maintain consistent quality.", "フィルム製造と製袋工程の重要項目を点検し、安定した品質を維持します。"],
+    ["납기 중심 대응", "Reliable Delivery", "納期を重視した対応"],
+    ["생산 일정과 출고 과정을 체계적으로 관리하여 약속된 납기에 안정적으로 대응합니다.", "We manage production schedules and shipment systematically to meet agreed delivery dates reliably.", "生産日程と出荷工程を体系的に管理し、お約束した納期に確実に対応します。"],
+    ["종량제봉투 생산 역량", "Our Production Capabilities", "指定ごみ袋の生産体制"],
+    ["압출부터 가공까지", "From Extrusion to Bag-Making", "押出から製袋まで"],
+    ["원재료 투입과 원단 압출, 인쇄 사양 확인, 절단 및 봉투 가공까지 생산 흐름을 체계적으로 관리합니다.", "We manage the production workflow from raw material feeding and film extrusion to printing specification checks, cutting and bag-making.", "原材料の投入、フィルムの押出、印刷仕様の確認、切断、製袋まで、生産の流れを体系的に管理します。"],
+    ["요구사항 확인과 출고", "Requirement Checks and Shipment", "要求事項の確認と出荷"],
+    ["제품 규격과 납품 조건을 사전에 확인하고, 완성된 제품을 점검하여 계획된 일정에 맞춰 출고합니다.", "We confirm product specifications and delivery conditions in advance, inspect finished products and ship according to the planned schedule.", "製品規格と納品条件を事前に確認し、完成品を点検したうえで、予定の日程に合わせて出荷します。"],
+    ["규격 확인", "Specification Checks", "規格確認"],
+    ["용량, 재질, 색상과 인쇄 내용을 생산 전에 세심하게 확인합니다.", "We carefully check capacity, material, color and printing details before production.", "生産前に容量、材質、色、印刷内容を細かく確認します。"],
+    ["공정 관리", "Process Control", "工程管理"],
+    ["압출과 가공 과정의 주요 품질 항목을 꾸준히 점검합니다.", "We regularly inspect key quality parameters in extrusion and bag-making.", "押出・製袋工程の重要な品質項目を継続的に点検します。"],
+    ["납품 대응", "Delivery Management", "納品対応"],
+    ["생산 일정과 출고 계획을 관리하여 안정적인 납기를 지향합니다.", "We manage production schedules and shipment plans to support reliable delivery.", "生産日程と出荷計画を管理し、安定した納期対応を目指します。"],
+    ["종량제봉투 생산 상담이 필요하신가요?", "Need to Discuss Official Waste Bag Production?", "指定ごみ袋の製造についてご相談ください"],
+    ["필요한 규격과 수량, 납기 일정을 알려주시면 생산 가능 여부와 진행 방향을 안내해 드립니다.", "Tell us your specifications, quantity and delivery schedule, and we will advise on production feasibility and next steps.", "ご希望の規格、数量、納期をお知らせいただければ、生産の可否と進め方をご案内します。"],
+    ["손잡이봉투, 포장봉투, 일반봉투, 대형봉투 주문에 따라 제작 가능합니다.", "Handle bags, packaging bags, general-purpose bags and large bags can be made to order.", "手提げ袋、包装袋、一般袋、大型袋を、ご注文に応じて製造できます。"],
+    ["품질 포인트", "Quality Highlights", "品質のポイント"],
+    ["내구성, 마감 품질, 인쇄 선명도, 납기 안정성 등 일반봉투의 강점을 정리하기 좋은 영역입니다.", "This section can highlight durability, finishing quality, print clarity and reliable delivery for general-purpose bags.", "耐久性、仕上げ品質、印刷の鮮明さ、納期の安定性など、一般袋の強みを紹介する内容です。"],
+    ["엘케이폴리머 일반봉투 생산시설", "LK POLYMER general-purpose bag production facilities", "エルケイポリマーの一般袋生産設備"],
+    ["한국프라스틱공업협동조합의 규격으로 제작됩니다.", "Manufactured to the standards of the Korea Plastics Industry Cooperative.", "韓国プラスチック工業協同組合の規格に基づいて製造します。"],
+    ["제품 특징", "Product Features", "製品の特長"],
+    ["지자체의 요구사항에 맞추어 생산하며, 안정적인 품질유지를 약속합니다.", "We manufacture to local government requirements and are committed to consistent quality.", "自治体の要求事項に合わせて製造し、安定した品質の維持に努めます。"]
+  ];
+
+  const dictionary = { en: Object.create(null), ja: Object.create(null) };
+  const add = (ko, en, ja) => { dictionary.en[ko] = en; dictionary.ja[ko] = ja; };
+  entries.forEach((entry) => add(...entry));
+  const titles = [
+    ["회사소개 - CEO 인사말 | LK 폴리머", "CEO Message", "代表挨拶"],
+    ["회사소개 - 연혁 | LK 폴리머", "History", "沿革"],
+    ["회사소개 - 오시는 길 | LK 폴리머", "Location", "アクセス"],
+    ["제품소개 - 종량제봉투 | LK 폴리머", "Official Waste Bags", "指定ごみ袋"],
+    ["제품소개 - 일반봉투 | LK 폴리머", "General-Purpose Bags", "一般袋"],
+    ["공장소개 - 공장전경 | LK 폴리머", "Factory Overview", "工場外観"],
+    ["공장소개 - 압출시설 | LK 폴리머", "Extrusion Facilities", "押出設備"],
+    ["공장소개 - 가공시설 | LK 폴리머", "Bag-Making Facilities", "製袋設備"],
+    ["인증현황 - 인증서 | 엘케이폴리머", "Certificates", "証明書・認証書"],
+    ["연락문의 - 자주찾는질문 | LK 폴리머", "FAQ", "よくあるご質問"],
+    ["연락문의 - 상담요청 | 엘케이폴리머", "Contact for Consultation", "ご相談窓口"]
+  ];
+  titles.forEach(([ko, en, ja]) => add(ko, `${en} | LK POLYMER`, `${ja} | エルケイポリマー`));
+  add("엘케이폴리머 | 종량제봉투 전문 제조기업", "LK POLYMER | Official Waste Bag Manufacturer", "エルケイポリマー | 指定ごみ袋の専門メーカー");
+
+  for (const [ko, en, ja] of [
+    ["압출시설", "Extrusion facilities", "押出設備"],
+    ["공장전경", "Factory overview", "工場外観"],
+    ["가공시설", "Bag-making facilities", "製袋設備"],
+    ["종량제봉투", "Official waste bags", "指定ごみ袋"]
+  ]) {
+    for (let index = 1; index <= 3; index++) {
+      add(`${ko}${ko === "종량제봉투" ? " 생산" : ""} 이미지 ${index}`, `${en} photo ${index}`, `${ja} 写真 ${index}`);
+      add(`${ko} 썸네일 ${index}`, `${en} thumbnail ${index}`, `${ja} サムネイル ${index}`);
+    }
+  }
+  for (const [ko, en, ja] of [
+    ["사업자등록증", "Business registration certificate", "事業者登録証"],
+    ["중소기업확인서", "SME confirmation certificate", "中小企業確認書"],
+    ["직접생산확인증명서", "Direct production confirmation certificate", "直接生産確認証明書"],
+    ["환경표지인증서", "Environmental label certificate", "環境ラベル認証書"]
+  ]) {
+    add(`${ko} PDF 열기`, `Open ${en} PDF`, `${ja}のPDFを開く`);
+    add(`${ko} 미리보기`, `${en} preview`, `${ja}のプレビュー`);
+  }
+  for (const type of ["HD·LLD", "CA", "RE", "FO"]) {
+    add(`단체표준인증 ${type}`, `Group Standard Certification ${type}`, `団体標準認証 ${type}`);
+  }
+  add(
+    "엘케이폴리머 | 대표이사 김지수 | 주소 경기도 화성시 만세구 향남읍 토성로 310-32 | 전화번호 031-352-6317 | 사업자등록번호 381-86-03790 | Office Hours 평일 09:00~17:00 (공휴일 휴무) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
+    "LK POLYMER | CEO Kim Ji-su | Address: 310-32, Toseong-ro, Hyangnam-eup, Manse-gu, Hwaseong-si, Gyeonggi-do, Republic of Korea | Phone: 031-352-6317 | Business Registration No. 381-86-03790 | Business Hours: Weekdays 09:00-17:00 (closed on public holidays) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
+    "エルケイポリマー | 代表取締役 キム・ジス | 所在地：韓国 京畿道 華城市 万歳区 郷南邑 土城路 310-32 | 電話番号：031-352-6317 | 事業者登録番号：381-86-03790 | 営業時間：平日 09:00～17:00（祝日休業） | Copyright © LK POLYMER CO., LTD. All Rights Reserved."
+  );
+  window.SITE_TRANSLATIONS = dictionary;
+})();
