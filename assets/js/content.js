@@ -67,7 +67,7 @@ window.SITE_CONTENT = {
       bannerText: "필요한 규격과 수량, 납기 일정을 알려주시면 생산 가능 여부와 진행 방향을 안내해 드립니다."
     },
     aboutHistory: { sideTitle: "회사소개", sideHistory: "연혁", sideCeo: "CEO 인사말", sideLocation: "오시는 길", title: "연혁", lead: "엘케이폴리머의 성장과정." },
-    aboutCeo: { sideTitle: "회사소개", sideHistory: "연혁", sideCeo: "CEO 인사말", sideLocation: "오시는 길", title: "CEO 인사말", lead: "대표 인사말은 기업의 신뢰와 방향성을 보여주는 중요한 영역입니다. 아래 예시는 수정용 초안입니다." },
+    aboutCeo: { sideTitle: "회사소개", sideHistory: "연혁", sideCeo: "CEO 인사말", sideLocation: "오시는 길", title: "CEO 인사말", lead: "품질은 정확한 공정에서, 신뢰는 소통과 약속의 실천에서 시작됩니다." },
     aboutLocation: { sideTitle: "회사소개", sideHistory: "연혁", sideCeo: "CEO 인사말", sideLocation: "오시는 길", title: "오시는 길", lead: "주소와 지도 링크를 입력하면 바로 사용할 수 있는 안내 페이지입니다." },
     productsPaybag: { sideTitle: "제품소개", sidePaybag: "종량제봉투", sideGeneral: "일반봉투", title: "종량제봉투", lead: "한국프라스틱공업협동조합의 규격으로 제작됩니다." },
     productsGeneral: { sideTitle: "제품소개", sidePaybag: "종량제봉투", sideGeneral: "일반봉투", title: "일반봉투", lead: "손잡이봉투, 포장봉투, 일반봉투, 대형봉투 주문에 따라 제작 가능합니다." },
