@@ -66,6 +66,10 @@
     ["종량제 쓰레기봉투 환경표지인증서입니다.", "Environmental label certificate for official waste bags.", "指定ごみ袋の環境ラベル認証書です。"],
     ["준비중", "Coming Soon", "準備中"],
     ["인증 자료를 준비하고 있습니다.", "Certification documents are being prepared.", "認証資料を準備しております。"],
+    ["쓰레기 분리수거용 합성수지 봉투 인증서입니다.", "Group standard certificate for plastic waste collection bags.", "ごみ分別収集用の合成樹脂製袋の団体標準認証書です。"],
+    ["탄산칼슘 함유 쓰레기 분리수거용 봉투 인증서입니다.", "Group standard certificate for waste collection bags containing calcium carbonate.", "炭酸カルシウムを含有するごみ分別収集用袋の団体標準認証書です。"],
+    ["재사용 종량제봉투 인증서입니다.", "Group standard certificate for reusable official waste bags.", "再使用できる指定ごみ袋の団体標準認証書です。"],
+    ["음식물 쓰레기 전용 합성수지 봉투 인증서입니다.", "Group standard certificate for plastic bags for food waste.", "生ごみ専用の合成樹脂製袋の団体標準認証書です。"],
     ["실제 문의 패턴에 따라 질문과 답변을 축적해 나가기 좋은 구조입니다.", "This section can be expanded with questions and answers based on actual customer inquiries.", "実際のお問い合わせに合わせて、質問と回答を追加していくためのページです。"],
     ["Q. 제품 규격 상담은 어떻게 진행되나요?", "Q. How can I discuss product specifications?", "Q. 製品仕様の相談はどのように進めますか？"],
     ["A. 필요한 용도, 규격, 수량, 인쇄 여부 등을 알려주시면 검토 후 안내드리는 방식으로 내용을 수정할 수 있습니다.", "A. This draft answer can be updated to explain how we review the intended use, specifications, quantity and printing requirements before providing guidance.", "A. 用途、規格、数量、印刷の有無などをお知らせいただき、検討後にご案内する内容へ編集できます。"],
@@ -177,6 +181,16 @@
   }
   for (const type of ["HD·LLD", "CA", "RE", "FO"]) {
     add(`단체표준인증 ${type}`, `Group Standard Certification ${type}`, `団体標準認証 ${type}`);
+  }
+  for (const [ko, en, ja] of [
+    ["HD·LLD", "HD·LLD", "HD・LLD"],
+    ["탄산칼슘(CA)", "Calcium Carbonate (CA)", "炭酸カルシウム（CA）"],
+    ["재사용(RE)", "Reusable Bags (RE)", "再使用袋（RE）"],
+    ["음식물(FO)", "Food Waste Bags (FO)", "生ごみ用袋（FO）"]
+  ]) {
+    add(`단체표준인증 ${ko}`, `Group Standard Certification: ${en}`, `団体標準認証：${ja}`);
+    add(`단체표준인증 ${ko} PDF 열기`, `Open group standard certificate PDF: ${en}`, `団体標準認証書のPDFを開く：${ja}`);
+    add(`단체표준인증 ${ko} 미리보기`, `Group standard certificate preview: ${en}`, `団体標準認証書のプレビュー：${ja}`);
   }
   add(
     "엘케이폴리머 | 대표이사 김지수 | 주소 경기도 화성시 만세구 향남읍 토성로 310-32 | 전화번호 031-352-6317 | 사업자등록번호 381-86-03790 | Office Hours 평일 09:00~17:00 (공휴일 휴무) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
