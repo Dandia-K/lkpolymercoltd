@@ -198,9 +198,9 @@
     add(`단체표준인증 ${ko} 미리보기`, `Group standard certificate preview: ${en}`, `団体標準認証書のプレビュー：${ja}`);
   }
   add(
-    "엘케이폴리머 | 대표이사 김지수 | 주소 경기도 화성시 만세구 향남읍 토성로 310-32 | 전화번호 031-352-6317 | 사업자등록번호 381-86-03790 | Office Hours 평일 09:00~17:00 (공휴일 휴무) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
-    "LK POLYMER | CEO Kim Ji-su | Address: 310-32, Toseong-ro, Hyangnam-eup, Manse-gu, Hwaseong-si, Gyeonggi-do, Republic of Korea | Phone: (+82)31-352-6317 | Business Registration No. 381-86-03790 | Business Hours: Weekdays 09:00-17:00 (closed on public holidays) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
-    "エルケイポリマー | 代表取締役 キム・ジス | 所在地：韓国 京畿道 華城市 万歳区 郷南邑 土城路 310-32 | 電話番号：(+82)31-352-6317 | 事業者登録番号：381-86-03790 | 営業時間：平日 09:00～17:00（祝日休業） | Copyright © LK POLYMER CO., LTD. All Rights Reserved."
+    "엘케이폴리머 | 대표이사 김지수 | 주소 경기도 화성시 만세구 향남읍 토성로 310-32 | 전화번호 031-352-6317 | 사업자등록번호 371-86-03790 | Office Hours 평일 09:00~17:00 (공휴일 휴무) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
+    "LK POLYMER | CEO Kim Ji-su | Address: 310-32, Toseong-ro, Hyangnam-eup, Manse-gu, Hwaseong-si, Gyeonggi-do, Republic of Korea | Phone: (+82)31-352-6317 | Business Registration No. 371-86-03790 | Business Hours: Weekdays 09:00-17:00 (closed on public holidays) | Copyright © LK POLYMER CO., LTD. All Rights Reserved.",
+    "エルケイポリマー | 代表取締役 キム・ジス | 所在地：韓国 京畿道 華城市 万歳区 郷南邑 土城路 310-32 | 電話番号：(+82)31-352-6317 | 事業者登録番号：371-86-03790 | 営業時間：平日 09:00～17:00（祝日休業） | Copyright © LK POLYMER CO., LTD. All Rights Reserved."
   );
   window.SITE_TRANSLATIONS = dictionary;
 })();
