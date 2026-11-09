@@ -3,6 +3,7 @@
     ["Standard Waste Bag Manufacturer", "Official Waste Bag Manufacturer", "指定ごみ袋の専門メーカー"],
     ["MAIN PRODUCT", "MAIN PRODUCT", "主力製品"],
     ["엘케이폴리머", "LK POLYMER", "エルケイポリマー"],
+    ["엘케이폴리머는 종량제봉투와 일반봉투를 제조합니다. 제품 안내, 생산시설, 인증 현황과 생산 상담 연락처를 확인하실 수 있습니다.", "LK POLYMER manufactures official waste bags and general-purpose bags. Explore our products, production facilities, certifications and contact information.", "エルケイポリマーは指定ごみ袋と一般袋を製造しています。製品、生産設備、認証情報、製造に関するお問い合わせ先をご案内します。"],
     ["종량제봉투 · 일반봉투 제조 전문기업", "Manufacturer of official waste bags and general-purpose bags", "指定ごみ袋・一般袋の専門メーカー"],
     ["종량제봉투 전문 제조 · 일반봉투 주문 생산", "Official waste bag manufacturing / Custom general-purpose bags", "指定ごみ袋の専門製造・一般袋の受注生産"],
     ["회사소개", "About Us", "会社案内"],
